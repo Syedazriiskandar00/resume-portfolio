@@ -94,7 +94,7 @@ export function HeroSection() {
             <p className="text-lg sm:text-xl text-surface-800 max-w-xl leading-relaxed">
               {SITE.tagline}
             </p>
-            <p className="text-base text-surface-200 max-w-lg">
+            <p className="text-base text-surface-500 max-w-lg">
               {SITE.origin}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">

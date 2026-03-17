@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const PILLAR_STYLES = [
   "bg-white",
-  "bg-surface-50",
+  "bg-white",
   "bg-primary-50",
 ] as const;
 
@@ -34,7 +34,7 @@ export function SkillsSection() {
                 "rounded-xl p-6 sm:p-8",
                 PILLAR_COLS[i],
                 PILLAR_STYLES[i],
-                i === 0 && "border border-surface-200",
+                (i === 0 || i === 1) && "border border-surface-200",
                 i === 2 && "border border-primary-100"
               )}
             >

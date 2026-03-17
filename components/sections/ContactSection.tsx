@@ -36,7 +36,7 @@ export function ContactSection() {
         </p>
         <p className="text-lg text-white/60 mb-10 max-w-xl mx-auto">
           If your team builds AI-powered products and you need someone who ships
-          fast and thinks like a product person — let&apos;s talk.
+          fast and thinks like a product person, let&apos;s talk.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">

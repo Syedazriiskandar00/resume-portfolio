@@ -17,9 +17,42 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Syed Azri — AI Solutions Engineer",
+  metadataBase: new URL("https://azridev.my"),
+  title: "Syed Azri | AI Solutions Engineer",
   description:
-    "I build AI-powered products that solve real business problems — from concept to deployment. Former sales exec turned self-taught developer who shipped 3 production SaaS products in under a year.",
+    "I build AI-powered products that solve real business problems, from concept to deployment. Former sales exec turned self-taught developer who shipped 3 production SaaS products in under a year.",
+  keywords: [
+    "AI Solutions Engineer",
+    "Malaysia",
+    "SaaS developer",
+    "AI products",
+    "full-stack developer",
+    "Next.js",
+    "TypeScript",
+  ],
+  authors: [{ name: "Syed Azri" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://azridev.my",
+    siteName: "Syed Azri",
+    title: "Syed Azri | AI Solutions Engineer",
+    description:
+      "Former sales exec turned self-taught developer. Shipped 3 production SaaS products in under a year.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Syed Azri | AI Solutions Engineer",
+    description:
+      "Former sales exec turned self-taught developer. Shipped 3 production SaaS products in under a year.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://azridev.my",
+  },
 };
 
 export default function RootLayout({

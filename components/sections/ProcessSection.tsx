@@ -34,7 +34,7 @@ export function ProcessSection() {
                   <p className="text-sm text-surface-800 leading-relaxed mb-3">
                     {step.description}
                   </p>
-                  <p className="text-xs text-surface-200 italic">
+                  <p className="text-xs text-surface-400 italic">
                     {step.example}
                   </p>
                 </div>

@@ -29,7 +29,7 @@ function FeaturedProject({ project }: { project: Project }) {
           <h3 className="text-2xl font-bold text-surface-950 mb-2">
             {project.name}
           </h3>
-          <p className="text-sm text-surface-200 mb-4">{project.tagline}</p>
+          <p className="text-sm text-surface-500 mb-4">{project.tagline}</p>
           <p className="text-surface-800 leading-relaxed mb-6">
             {project.description}
           </p>
@@ -67,7 +67,7 @@ function ProjectCard({
       <h3 className="text-xl font-bold text-surface-950 mb-2">
         {project.name}
       </h3>
-      <p className="text-sm text-surface-200 mb-3">{project.tagline}</p>
+      <p className="text-sm text-surface-500 mb-3">{project.tagline}</p>
       <p className="text-surface-800 leading-relaxed mb-5 text-sm">
         {project.description}
       </p>

@@ -4,7 +4,7 @@ export const SITE = {
   name: "Syed Azri",
   title: "AI Solutions Engineer",
   tagline:
-    "I build AI-powered products that solve real business problems — from concept to deployment.",
+    "I build AI-powered products that solve real business problems, from concept to deployment.",
   origin:
     "Former sales exec. Self-taught developer. Shipped 3 production SaaS products in under a year.",
   email: "syedazriiskandar00@gmail.com",
@@ -43,9 +43,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const STORY = {
   paragraphs: [
-    "A year ago, I was selling water filters door to door. Good at it, too — I could read people, figure out what they actually needed, and close the deal. But I kept thinking: there has to be a smarter way to solve problems than knocking on doors.",
-    "So I taught myself to code. No bootcamp, no CS degree. Just me, a laptop, and an unhealthy amount of documentation. Within months, I wasn't just writing code — I was shipping products. Real ones, with real users and real revenue.",
-    "I've since built 3 production SaaS products, worked with databases of 107,000+ records, integrated AI voice agents, payment systems, and automation pipelines. The sales background wasn't a detour — it's why I build things that actually solve problems, not just things that look good in a demo.",
+    "A year ago, I was selling water filters door to door. Good at it, too. I could read people, figure out what they actually needed, and close the deal. But I kept thinking: there has to be a smarter way to solve problems than knocking on doors.",
+    "So I taught myself to code. No bootcamp, no CS degree. Just me, a laptop, and an unhealthy amount of documentation. Within months, I wasn't just writing code. I was shipping products. Real ones, with real users and real revenue.",
+    "I've since built 3 production SaaS products, worked with databases of 107,000+ records, integrated AI voice agents, payment systems, and automation pipelines. The sales background wasn't a detour. It's why I build things that actually solve problems, not just things that look good in a demo.",
   ],
   highlightStat: "3 production SaaS products shipped in under 12 months",
 } as const;
@@ -54,13 +54,13 @@ export const CAPABILITIES: Capability[] = [
   {
     title: "AI Product Development",
     description:
-      "End-to-end AI-powered SaaS — from LLM integration and voice AI to intelligent chatbots that handle real conversations.",
+      "End-to-end AI-powered SaaS. From LLM integration and voice AI to intelligent chatbots that handle real conversations.",
     tools: ["Claude API", "Retell AI", "OpenAI", "LangChain", "Vector DBs"],
   },
   {
     title: "Full-Stack Shipping",
     description:
-      "Not just prototypes — production-ready apps with auth, payments, databases, and the boring stuff that makes products actually work.",
+      "Not just prototypes. Production-ready apps with auth, payments, databases, and the boring stuff that makes products actually work.",
     tools: [
       "Next.js",
       "TypeScript",
@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     slug: "aihaa",
     tagline: "AI chatbot ecosystem with tech mapping",
     description:
-      "A multi-component AI system — chatbot for customer queries, technology mapper for business analysis, and a Telegram bot tying it all together.",
+      "A multi-component AI system: chatbot for customer queries, technology mapper for business analysis, and a Telegram bot tying it all together.",
     url: "https://aihaainfo.com",
     stats: ["AI chatbot", "Tech mapper", "Telegram bot"],
     tech: ["Next.js", "Supabase", "Claude API", "Telegram Bot API"],
@@ -144,13 +144,13 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description:
       "Get a working version in days, not months. Ship ugly, validate early, iterate based on real usage.",
     example:
-      "First version of ContentScriptPro was rough — but it proved people wanted AI content automation.",
+      "First version of ContentScriptPro was rough, but it proved people wanted AI content automation.",
   },
   {
     step: 3,
     title: "Ship to Production",
     description:
-      "Auth, payments, error handling, monitoring — the 80% of work nobody sees but everyone depends on.",
+      "Auth, payments, error handling, monitoring. The 80% of work nobody sees but everyone depends on.",
     example:
       "LeadCari handles Stripe subscriptions, 107K+ records, and AI voice calls in production daily.",
   },
