@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { SITE } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
@@ -88,9 +89,27 @@ export function HeroSection() {
             <p className="font-mono text-sm text-primary-500 tracking-wide uppercase">
               {SITE.title}
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-950 leading-tight">
-              {SITE.name}
-            </h1>
+            <div className="flex items-center gap-4 sm:gap-5">
+              {/* Profile photo with blue tick */}
+              <div className="relative flex-shrink-0">
+                <Image
+                  src="/images/profile.png"
+                  alt="Syed Azri"
+                  width={80}
+                  height={80}
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-2 border-surface-200"
+                  priority
+                />
+                <div className="absolute -bottom-0.5 -right-0.5 w-5 h-5 bg-primary-500 rounded-full flex items-center justify-center border-2 border-white">
+                  <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-950 leading-tight">
+                {SITE.name}
+              </h1>
+            </div>
             <p className="text-lg sm:text-xl text-surface-800 max-w-xl leading-relaxed">
               {SITE.tagline}
             </p>
