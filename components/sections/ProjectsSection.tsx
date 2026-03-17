@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PROJECTS } from "@/lib/constants";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
@@ -7,9 +8,16 @@ function FeaturedProject({ project }: { project: Project }) {
   return (
     <div className="rounded-2xl border-l-4 border-accent-500 bg-white shadow-sm overflow-hidden">
       <div className="md:grid md:grid-cols-2">
-        {/* Left — gradient with floating stats */}
-        <div className="bg-gradient-to-br from-surface-900 to-primary-900 p-8 md:p-10 flex flex-col justify-center relative min-h-[240px]">
-          <div className="space-y-3">
+        {/* Left — screenshot with floating stats */}
+        <div className="relative min-h-[240px] md:min-h-[320px]">
+          <Image
+            src="/images/leadfinder.png"
+            alt="LeadCari screenshot"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-surface-900/30" />
+          <div className="absolute bottom-4 left-4 right-4 space-y-2">
             {project.stats.map((stat) => (
               <div
                 key={stat}
@@ -49,6 +57,11 @@ function FeaturedProject({ project }: { project: Project }) {
   );
 }
 
+const PROJECT_IMAGES: Record<string, string> = {
+  contentscriptpro: "/images/contentscriptpro.png",
+  aihaa: "/images/aihaainfo.png",
+};
+
 function ProjectCard({
   project,
   variant,
@@ -56,14 +69,26 @@ function ProjectCard({
   project: Project;
   variant: "filled" | "outlined";
 }) {
+  const imageSrc = PROJECT_IMAGES[project.slug];
   return (
     <div
       className={
         variant === "filled"
-          ? "rounded-xl bg-surface-50 p-6 sm:p-8"
-          : "rounded-xl border border-surface-200 bg-white p-6 sm:p-8"
+          ? "rounded-xl bg-surface-50 overflow-hidden"
+          : "rounded-xl border border-surface-200 bg-white overflow-hidden"
       }
     >
+      {imageSrc && (
+        <div className="relative aspect-video w-full">
+          <Image
+            src={imageSrc}
+            alt={`${project.name} screenshot`}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
+      <div className="p-6 sm:p-8">
       <h3 className="text-xl font-bold text-surface-950 mb-2">
         {project.name}
       </h3>
@@ -79,6 +104,7 @@ function ProjectCard({
       <Button href={project.url} variant="ghost" size="sm">
         View Live &rarr;
       </Button>
+      </div>
     </div>
   );
 }
@@ -114,7 +140,7 @@ export function ProjectsSection() {
           What I&apos;ve Shipped
         </h2>
         <p className="text-2xl sm:text-3xl font-bold text-surface-950 mb-12 max-w-2xl">
-          Real products. Real users. Real revenue.
+          Real products. Real users. Real problems solved.
         </p>
 
         <div className="space-y-6">

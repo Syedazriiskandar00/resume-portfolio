@@ -44,8 +44,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const STORY = {
   paragraphs: [
     "A year ago, I was selling water filters door to door. Good at it, too. I could read people, figure out what they actually needed, and close the deal. But I kept thinking: there has to be a smarter way to solve problems than knocking on doors.",
-    "So I taught myself to code. No bootcamp, no CS degree. Just me, a laptop, and an unhealthy amount of documentation. Within months, I wasn't just writing code. I was shipping products. Real ones, with real users and real revenue.",
-    "I've since built 3 production SaaS products, worked with databases of 107,000+ records, integrated AI voice agents, payment systems, and automation pipelines. The sales background wasn't a detour. It's why I build things that actually solve problems, not just things that look good in a demo.",
+    "So I taught myself to code. No bootcamp, no CS degree. Just me, a laptop, and an unhealthy amount of documentation. Within months, I wasn't just writing code. I was shipping products. Real ones, with real users and real problems solved.",
+    "I've since built 3 production SaaS products, compiled a database of 107,000+ Malaysian business contacts, integrated AI voice agents, payment systems, and automation pipelines. The sales background wasn't a detour. It's why I build things that actually solve problems, not just things that look good in a demo.",
   ],
   highlightStat: "3 production SaaS products shipped in under 12 months",
 } as const;
@@ -84,9 +84,9 @@ export const PROJECTS: Project[] = [
     slug: "leadcari",
     tagline: "B2B lead generation SaaS with AI voice agent",
     description:
-      "Built a full B2B SaaS platform with 107K+ business records, Stripe subscriptions, and an AI voice agent that calls leads automatically. The kind of thing that used to need a 10-person sales team.",
+      "Built a full B2B SaaS platform with 107K+ Malaysian business contacts in database, Stripe subscriptions, and an AI voice agent that calls leads automatically. The kind of thing that used to need a 10-person sales team.",
     url: "https://leadcari.com",
-    stats: ["107K+ records", "Stripe payments", "AI voice calling"],
+    stats: ["107K+ contacts", "Stripe payments", "AI voice calling"],
     tech: ["Next.js", "Supabase", "Stripe", "Retell AI", "TypeScript"],
     featured: true,
     status: "live",
@@ -152,7 +152,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description:
       "Auth, payments, error handling, monitoring. The 80% of work nobody sees but everyone depends on.",
     example:
-      "LeadCari handles Stripe subscriptions, 107K+ records, and AI voice calls in production daily.",
+      "LeadCari handles Stripe subscriptions, 107K+ contacts, and AI voice calls in production daily.",
   },
   {
     step: 4,
