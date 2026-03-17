@@ -39,6 +39,25 @@ const config: Config = {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "0%, 100%": { borderColor: "transparent" },
+          "50%": { borderColor: "currentColor" },
+        },
+      },
+      animation: {
+        fadeInUp: "fadeInUp 0.6s ease-out forwards",
+        typing: "typing 3s steps(30) forwards",
+        blink: "blink 1s step-end infinite",
+      },
     },
   },
   plugins: [],

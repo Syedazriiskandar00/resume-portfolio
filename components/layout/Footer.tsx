@@ -1,7 +1,10 @@
 export function Footer() {
   return (
-    <footer className="py-6 text-center text-sm text-surface-200">
-      <p>&copy; {new Date().getFullYear()} Syed Azri. All rights reserved.</p>
+    <footer className="bg-surface-950 py-6 text-center">
+      <p className="text-sm text-white/30">
+        &copy; {new Date().getFullYear()} Syed Azri. Built with Next.js &
+        shipped from Johor.
+      </p>
     </footer>
   );
 }
