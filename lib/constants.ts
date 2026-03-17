@@ -60,7 +60,7 @@ export const CAPABILITIES: Capability[] = [
     title: "AI Product Development",
     description:
       "End-to-end AI-powered SaaS. From LLM integration and voice AI to intelligent chatbots that handle real conversations.",
-    tools: ["Claude API", "Retell AI", "OpenAI", "LangChain", "Vector DBs"],
+    tools: ["Claude API", "Retell AI", "OpenAI", "Firecrawl", "Make.com", "Claude Code (17 sub-agent system)"],
   },
   {
     title: "Full-Stack Shipping",
@@ -79,7 +79,7 @@ export const CAPABILITIES: Capability[] = [
     title: "Automation & Integration",
     description:
       "Connect systems, automate workflows, and build the pipes that make data flow between tools without human babysitting.",
-    tools: ["n8n", "Twilio", "WhatsApp API", "Telegram Bot", "Retell AI"],
+    tools: ["n8n", "Make.com", "Twilio", "WhatsApp API", "Telegram Bot", "Retell AI"],
   },
 ];
 
