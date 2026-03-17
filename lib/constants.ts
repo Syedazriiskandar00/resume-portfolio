@@ -25,6 +25,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "email",
   },
   {
+    label: "WhatsApp",
+    url: "https://wa.me/601161144639",
+    icon: "whatsapp",
+  },
+  {
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/syed-azri-iskandar-b240723b1/",
     icon: "linkedin",
@@ -94,9 +99,9 @@ export const PROJECTS: Project[] = [
   {
     name: "ContentScriptPro",
     slug: "contentscriptpro",
-    tagline: "AI content automation for creators",
+    tagline: "AI copywriting tool for Malaysian businesses",
     description:
-      "AI-powered content automation SaaS that helps creators generate, schedule, and manage content across platforms. Takes the grunt work out of content creation.",
+      "AI copywriting tool that generates sales scripts, ad copy, and marketing content tailored to specific Malaysian business niches. Pick your industry, get ready-to-use copy in BM or English.",
     url: "https://contentscriptpro.co",
     stats: ["Multi-platform", "AI generation", "Auto-scheduling"],
     tech: ["Next.js", "Supabase", "Claude API", "TypeScript"],

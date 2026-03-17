@@ -26,5 +26,5 @@ export interface ProcessStep {
 export interface SocialLink {
   label: string;
   url: string;
-  icon: "email" | "linkedin" | "github" | "website";
+  icon: "email" | "whatsapp" | "linkedin" | "github" | "website";
 }

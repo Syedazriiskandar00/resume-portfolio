@@ -59,7 +59,7 @@ function TerminalVisual() {
           &gt; 3 SaaS products shipped
         </p>
         <p className="text-surface-200/40 text-xs">
-          &gt; 107,000+ records processed
+          &gt; 107,000+ contacts compiled
         </p>
         <p className="text-surface-200/40 text-xs">
           &gt; AI voice agents deployed
